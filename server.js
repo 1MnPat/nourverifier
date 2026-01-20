@@ -3,6 +3,7 @@ const axios = require('axios');
 const app = express();
 
 app.use(express.json());
+app.use(express.static('public'));
 
 const determineHalalStatus = (ingredientsText) => {
     const normalizedIngredients = (ingredientsText || '')

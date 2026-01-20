@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Halal Food Checker</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Halal Food Checker</h1>
+            <form>
+                <label for="barcode">Barcode</label>
+                <input id="barcode" name="barcode" type="text" inputmode="numeric" />
+                <button type="button">Check Halal Status</button>
+            </form>
+            <section aria-live="polite" aria-atomic="true">
+                <div id="result"></div>
+            </section>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>
